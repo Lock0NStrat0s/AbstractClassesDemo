@@ -52,9 +52,18 @@ namespace ConsoleUI
             vehicles.Add(vehicle1);
             vehicles.Add(vehicle2);
 
-            foreach (var item in vehicles)
+            //foreach (Vehicle item in vehicles)
+            //{
+            //    Console.WriteLine($"Vehicle: {item.ToString()}, Year: {item.Year}, Make: {item.Make}, Model: {item.Model}");
+            //}
+            foreach (var item in vehicles.OfType<Motorcycle>())
             {
-                Console.WriteLine($"Vehicle: {item.ToString()}, Year: {item.Year}, Make: {item.Make}, Model: {item.Model}");
+                Console.WriteLine($"Vehicle: {item.ToString()}, Year: {item.Year}, Make: {item.Make}, Model: {item.Model}, Has Side Cart: {item.HasSideCart}");
+            }
+
+            foreach (var item in vehicles.OfType<Car>())
+            {
+                Console.WriteLine($"Vehicle: {item.ToString()}, Year: {item.Year}, Make: {item.Make}, Model: {item.Model}, Has Trunk: {item.HasTrunk}");
             }
             // Call each of the drive methods for one car and one motorcycle
             Console.WriteLine("\nCar:");
