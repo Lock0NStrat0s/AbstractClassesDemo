@@ -39,10 +39,10 @@ namespace ConsoleUI
              * 
              * Set the properties values with object initializer syntax
              */
-            Car car = new Car() { HasTrunk = true, Make = "Toyota", Model = "Corolla", Year = 2015 };
-            Motorcycle motorcycle = new Motorcycle() { HasSideCart = false, Make = "Harley", Model = "Davidson", Year = 2019 };
-            Vehicle vehicle1 = new Car() { HasTrunk = true, Make = "Ford", Model = "Fusion", Year = 2018 };
-            Vehicle vehicle2 = new Motorcycle() { HasSideCart = true, Make = "Honda", Model = "Shadow", Year = 2017 };
+            Car car = new Car() { HasTrunk = true, Make = "Toyota", Model = "Corolla", Year = "2015" };
+            Motorcycle motorcycle = new Motorcycle() { HasSideCart = false, Make = "Harley", Model = "Davidson", Year = "2019" };
+            Vehicle vehicle1 = new Car() { HasTrunk = true, Make = "Ford", Model = "Fusion", Year = "2018" };
+            Vehicle vehicle2 = new Motorcycle() { HasSideCart = true, Make = "Honda", Model = "Shadow", Year = "2017" };
             /*
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate through the list and display each of the properties
