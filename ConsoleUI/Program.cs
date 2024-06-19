@@ -56,14 +56,16 @@ namespace ConsoleUI
             //{
             //    Console.WriteLine($"Vehicle: {item.ToString()}, Year: {item.Year}, Make: {item.Make}, Model: {item.Model}");
             //}
+            Console.WriteLine("Motorcycles:");
             foreach (var item in vehicles.OfType<Motorcycle>())
             {
-                Console.WriteLine($"Vehicle: {item.ToString()}, Year: {item.Year}, Make: {item.Make}, Model: {item.Model}, Has Side Cart: {item.HasSideCart}");
+                Console.WriteLine($"Year: {item.Year}, Make: {item.Make}, Model: {item.Model}, Has Side Cart: {item.HasSideCart}");
             }
 
+            Console.WriteLine("\nCars:");
             foreach (var item in vehicles.OfType<Car>())
             {
-                Console.WriteLine($"Vehicle: {item.ToString()}, Year: {item.Year}, Make: {item.Make}, Model: {item.Model}, Has Trunk: {item.HasTrunk}");
+                Console.WriteLine($"Year: {item.Year}, Make: {item.Make}, Model: {item.Model}, Has Trunk: {item.HasTrunk}");
             }
             // Call each of the drive methods for one car and one motorcycle
             Console.WriteLine("\nCar:");
